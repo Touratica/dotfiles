@@ -15,9 +15,24 @@
         curl:
         file:
         git:
+        wget:
         python-is-python3:
 
 # Requires dotbot-brew plugin
 - install-brew: true
 - brewfile:
     - Brewfile
+
+- shell:
+    -
+      command: if ! source ~/.nvm/nvm.sh; then (cd ~ && git clone https://github.com/nvm-sh/nvm.git .nvm && cd ~/.nvm && git checkout v0.39.1 && . ./nvm.sh && export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"); fi
+      description: Installing nvm
+      quiet: true
+    - 
+      command: source ~/.nvm/nvm.sh && nvm install --lts --latest-npm
+      description: Installing LTS version of Node.js
+      quiet: true
+    - 
+      command: source ~/.nvm/nvm.sh && nvm install node --latest-npm
+      description: Installing current version of Node.js
+      quiet: true
