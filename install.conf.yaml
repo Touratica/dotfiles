@@ -6,5 +6,7 @@
     ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
 
+# Requires dotbot-brew plugin
+- install-brew: true
 - brewfile:
     - Brewfile
