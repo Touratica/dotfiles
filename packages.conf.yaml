@@ -1,8 +1,0 @@
-# Requires dotbot_plugin_aptget
-- aptget: 
-    build-essential:
-    procps:
-    curl:
-    file:
-    git:
-    python-is-python3:

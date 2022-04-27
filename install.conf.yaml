@@ -6,6 +6,17 @@
     ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
 
+# Requires dotbot-sudo plugin
+- sudo:
+    # Requires dotbot_plugin_aptget plugin
+    - aptget: 
+        build-essential:
+        procps:
+        curl:
+        file:
+        git:
+        python-is-python3:
+
 # Requires dotbot-brew plugin
 - install-brew: true
 - brewfile:
