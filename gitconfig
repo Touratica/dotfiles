@@ -1,0 +1,15 @@
+[user]
+	name = João Pedro Almeida
+	email = 33964846+Touratica@users.noreply.github.com
+[remote "origin"]
+	prune = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
