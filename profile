@@ -25,5 +25,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(oh-my-posh --init --shell bash --config $(brew --prefix oh-my-posh)/themes/night-owl.omp.json)"

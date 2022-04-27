@@ -1,3 +1,7 @@
-- aptget:
-  build-essential:
-  python-is-python3:
+- aptget: 
+    build-essential:
+    procps:
+    curl:
+    file:
+    git:
+    python-is-python3:
