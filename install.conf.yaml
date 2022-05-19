@@ -1,3 +1,7 @@
+- defaults:
+    link:
+      force: true
+
 - clean: ['~']
 
 - link:
@@ -5,6 +9,9 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
+
+- create:
+    - ~/Documents
 
 # Requires dotbot-sudo plugin
 - sudo:
