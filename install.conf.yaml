@@ -36,10 +36,14 @@
       description: Installing nvm
       quiet: true
     - 
-      command: source ~/.nvm/nvm.sh && nvm install --lts --latest-npm
-      description: Installing LTS version of Node.js
-      quiet: true
-    - 
       command: source ~/.nvm/nvm.sh && nvm install node --latest-npm
       description: Installing current version of Node.js
+      quiet: true
+    -
+      command: npm install -g npm-check-updates@latest
+      description: Installing npm-check-updates package globally
+      quiet: true
+    - 
+      command: source ~/.nvm/nvm.sh && nvm install --lts --latest-npm
+      description: Installing LTS version of Node.js
       quiet: true
