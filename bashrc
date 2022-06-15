@@ -144,3 +144,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND; "}'printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"'
+
+export CVS_RSH=ssh
+export CVSROOT=:ext:ist189480@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/leic-co/co22/a/cvs/118
